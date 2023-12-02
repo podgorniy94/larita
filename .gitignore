@@ -1,0 +1,8 @@
+media/
+hair/templatetags/__pycache__/
+hair/__pycache__
+larita/__pycache__
+hair/migrations
+django_cache/
+.djlintrc
+.DS_Store
