@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "hair",
+    "hair.apps.HairConfig",
 ]
 
 MIDDLEWARE = [
