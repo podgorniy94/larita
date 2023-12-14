@@ -8,18 +8,16 @@
           content="width=device-width, initial-scale=1.0,maximum-scale=1" />
     <title>LaRita</title>
     <!-- Loading third party fonts -->
-    <link href={% static "fonts/novecento-font/novecento-font.css" %}/>
-    <link href={% static 'fonts/font-awesome.min.css' %}/>
+    <link href={% static "fonts/novecento-font/novecento-font.css" %} />
+    <link href={% static 'fonts/font-awesome.min.css' %} />
     <!-- Loading main css file -->
     <link rel="stylesheet" href={% static "hair/style.css" %} />
   </head>
   <body class="homepage header-collapse">
     <div id="site-content">
-
       {% include "inc/_header.html" %}
       {% block content %}{% endblock %}
       {% include "inc/_footer.html" %}
-
     </div>
     <script src={% static "hair/js/jquery-1.11.1.min.js" %}></script>
     <script src={% static "hair/js/plugins.js" %}></script>
