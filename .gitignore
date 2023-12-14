@@ -1,8 +1,7 @@
-media/
-hair/templatetags/__pycache__/
-hair/__pycache__
-larita/__pycache__
-hair/migrations
-django_cache/
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
 .djlintrc
 .DS_Store
