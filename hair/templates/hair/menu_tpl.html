@@ -1,0 +1,12 @@
+{% load static %}
+{% url "home" as home %}
+<ul class="menu">
+  <li class="menu-item {% if path == home %}current-menu-item{% endif %}">
+    <a href={% url 'hair:home' %}>home</a>
+  </li>
+  {% for page in pages %}
+    <li class="menu-item {% if path == "{{ page.get_absolute_url }}" %}current-menu-item{% endif %}">
+      <a href="{{ page.get_absolute_url }}">{{ page.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

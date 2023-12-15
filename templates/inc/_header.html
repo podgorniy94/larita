@@ -1,8 +1,9 @@
 {% load static %}
+{% load menu %}
 <header class="site-header">
   <div class="container">
-      <a id="branding" href="{% url 'hair:home' %}">
-      <img src={% static "hair/images/logo.png" %} alt="Company name" class="logo" />
+    <a id="branding" href="{% url 'hair:home' %}">
+      <img src="{% static "hair/images/logo.png" %}" alt="Company name" class="logo" />
       <div class="logo-copy">
         <h1 class="site-title">Company Name</h1>
         <small class="site-description">Slogan goes here</small>
@@ -14,23 +15,7 @@
       <button type="button" class="menu-toggle">
         <i class="fa fa-bars"></i>
       </button>
-      <ul class="menu">
-        <li class="menu-item current-menu-item">
-          <a href={% url 'hair:home' %}>Home</a>
-        </li>
-        <li class="menu-item">
-          <a href="about.html">About</a>
-        </li>
-        <li class="menu-item">
-          <a href="service.html">Services</a>
-        </li>
-        <li class="menu-item">
-          <a href="gallery.html">Gallery</a>
-        </li>
-        <li class="menu-item">
-          <a href="contact.html">Contact</a>
-        </li>
-      </ul>
+      {% show_menu %}
       <!-- .menu -->
     </div>
     <!-- .main-navigation -->

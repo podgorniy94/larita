@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 
 class Page(models.Model):
@@ -8,6 +9,9 @@ class Page(models.Model):
 
     def __str__(self):
         return self.title
+
+    def get_absolute_url(self):
+        return reverse("hair:page", kwargs={"slug": self.slug})
 
     class Meta:
         ordering = ["order"]
@@ -33,7 +37,6 @@ class GalleryPhoto(models.Model):
     photo = models.ImageField(upload_to="photos/%Y/%m/%d")
     tag = models.ManyToManyField(Tag, blank=True, related_name="photos")
     created_at = models.DateTimeField(auto_now_add=True)
-    # slug = models.SlugField(max_length=64, verbose_name="URL", unique=True)
 
     def __str__(self):
         return self.title
