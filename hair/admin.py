@@ -17,6 +17,7 @@ class GalleryPhotoAdmin(admin.ModelAdmin):
     save_on_top = True
     list_display = ("id", "title", "created_at", "get_photo")
     list_display_links = ("id", "title")
+    list_filter = ("tags",)
     readonly_fields = ("created_at", "get_photo")
 
     def get_photo(self, obj):

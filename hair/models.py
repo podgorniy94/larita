@@ -35,7 +35,7 @@ class GalleryPhoto(models.Model):
     title = models.CharField(max_length=64)
     description = models.TextField(blank=True)
     photo = models.ImageField(upload_to="photos/%Y/%m/%d")
-    tag = models.ManyToManyField(Tag, blank=True, related_name="photos")
+    tags = models.ManyToManyField(Tag, blank=True, related_name="photos")
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
@@ -43,5 +43,5 @@ class GalleryPhoto(models.Model):
 
     class Meta:
         ordering = ["-created_at"]
-        verbose_name = "Gallery Image"
-        verbose_name_plural = "Gallery Images"
+        verbose_name = "Photo"
+        verbose_name_plural = "Photos"

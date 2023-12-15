@@ -9,4 +9,5 @@ register = template.Library()
 def show_menu(context):
     path = context["request"].path
     pages = Page.objects.all()
+    print(path)
     return {"path": path, "pages": pages}

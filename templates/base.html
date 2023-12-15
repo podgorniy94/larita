@@ -1,28 +1,31 @@
 {% load static %}
+{% url "hair:home" as home %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport"
-          content="width=device-width, initial-scale=1.0,maximum-scale=1" />
+          content="width=device-width, initial-scale=1.0,maximum-scale=1">
     <title>
       {% block title %}LaRita{% endblock %}
     </title>
     <!-- Loading third party fonts -->
-    <link href={% static "fonts/novecento-font/novecento-font.css" %} />
-    <link href={% static 'fonts/font-awesome.min.css' %} />
+    <link href="{% static "fonts/font-awesome.min.css" %}" rel="stylesheet" type="text/css">
+    <link href="{% static "fonts/novecento-font/novecento-font.css" %}" rel="stylesheet" type="text/css">
     <!-- Loading main css file -->
-    <link rel="stylesheet" href={% static "hair/style.css" %} />
+    <link rel="stylesheet" href={% static "style.css" %} />
   </head>
-  <body class="homepage header-collapse">
+  <body {% if home == request.get_full_path %}class="homepage header-collapse"{% endif %}>
     <div id="site-content">
       {% include "inc/_header.html" %}
-      {% block content %}{% endblock %}
+      <main class="main-content">
+        {% block content %}{% endblock %}
+      </main>
       {% include "inc/_footer.html" %}
     </div>
-    <script src={% static "hair/js/jquery-1.11.1.min.js" %}></script>
-    <script src={% static "hair/js/plugins.js" %}></script>
-    <script src={% static "hair/js/app.js" %}></script>
+    <script src={% static "js/jquery-1.11.1.min.js" %}></script>
+    <script src={% static "js/plugins.js" %}></script>
+    <script src={% static "js/app.js" %}></script>
   </body>
 </html>

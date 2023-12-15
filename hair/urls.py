@@ -1,11 +1,11 @@
 from django.urls import path
 
-from hair.views import gallery, get_page, index
+from hair.views import Gallery, Home, Page
 
 app_name = "hair"
 
 urlpatterns = [
-    path("", index, name="home"),
-    path("gallery", gallery, name="gallery"),
-    path("<str:slug>", get_page, name="page"),
+    path("", Home.as_view(), name="home"),
+    path("gallery", Gallery.as_view(), name="gallery"),
+    path("<slug:slug>", Page.as_view(), name="page"),
 ]
