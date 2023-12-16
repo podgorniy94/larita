@@ -40,11 +40,10 @@
       <div class="filterable-items">
         {% for photo in photos %}
           <div class="gallery-item filterable-item {% for tag in photo.tags.all %}{{ tag }}{{ space }}{% endfor %}">
-            <a href={% static "dummy/large-gallery/gallery-1.jpg" %}>
+            <a href={{ photo.photo.url }}>
               <figure class="featured-image">
                 <img src="{{ photo.photo.url }}" alt="">
                 <figcaption>
-                  {% for tag in photo.tags.all %}{{ tag }}&nbsp;{% endfor %}
                   <h2 class="gallery-title">{{ photo.title }}</h2>
                   <p>{{ photo.description }}</p>
                 </figcaption>

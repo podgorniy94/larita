@@ -1,43 +1,53 @@
 {% load static %}
+{% url "hair:contact" as contact %}
 <div class="hero hero-slider">
   <ul class="slides">
     <li data-bg-image={% static "dummy/slider-1.jpg" %}>
       <div class="container">
-        <h3 class="slider-subtitle">Your header goes here</h3>
-        <h2 class="slider-title">Professional</h2>
+        <h3 class="slider-subtitle">Dámské a pánské kadeřnictví</h3>
+        <h2 class="slider-title">SALON LARITA</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa
-          molestiae necessitatibus possimus ducimus facere, error, nostrum. Quos
-          sapiente ducimus maxime odio alias dolor consequuntur, maiores commodi
-          exercitationem veniam. Id, ex?
+          Vstupte do světa elegance a krásy s Ritou Bolocan, vášnivou umělkyní střihu a péče o vlasy. Přijďte do salonu LaRita a nechte se unést atmosférou profesionální péče a osobního přístupu.
         </p>
-        <a href="#" class="button large">Read more</a>
+        <a href={% url "hair:about" %} class="button large">ZJISTIT VÍCE</a>
       </div>
     </li>
     <li data-bg-image={% static "dummy/slider-2.jpg" %}>
       <div class="container">
-        <h3 class="slider-subtitle">Your header goes here</h3>
-        <h2 class="slider-title">Professional</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. In maiores
-          illo eligendi obcaecati reiciendis, vel perspiciatis aliquid esse
-          architecto deleniti asperiores, laboriosam nemo rerum! Ipsam numquam
-          delectus minus iure sit!
-        </p>
-        <a href="#" class="button large">Read more</a>
+        <h3 class="slider-subtitle">Otevírací doba</h3>
+        <h2 class="slider-title">SALON LARITA</h2>
+        <h3>
+          <p>
+            <img src={% static "images/call-icon.png" %}>
+            <a href={{ contact }}>+420 773 948 875</a>
+            <br>
+            <br>
+            Pondělí – Pátek: 08.00 – 21.00
+            <br>
+            Sobota: 9.00 – 17.00
+            <br>
+            Neděle: dle dohody
+          </p>
+        </h3>
+        <a href={{ contact }} class="button large">ZJISTIT VÍCE</a>
       </div>
     </li>
     <li data-bg-image={% static "dummy/slider-3.jpg" %}>
       <div class="container">
-        <h3 class="slider-subtitle">Your header goes here</h3>
-        <h2 class="slider-title">Professional</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
-          iure, alias error suscipit porro quidem minus, autem repellendus rerum
-          labore corrupti! Quia quas, architecto, quis non pariatur quisquam
-          nisi magnam.
-        </p>
-        <a href="#" class="button large">Read more</a>
+        <h3 class="slider-subtitle">Adresa</h3>
+        <h2 class="slider-title">SALON LARITA</h2>
+        <h3>
+          <p>
+            <img src={% static "images/map-icon.png" %}>
+            <a href={{ contact }}>Poloha</a>
+            <br>
+            <br>
+            Černinova 116/3
+            <br>
+            Žižkov, Praha 3
+          </p>
+        </h3>
+        <a href={{ contact }} class="button large">ZJISTIT VÍCE</a>
       </div>
     </li>
   </ul>
