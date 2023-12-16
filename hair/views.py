@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.views.generic import ListView, TemplateView
 
 from .models import GalleryPhoto, Page
@@ -8,10 +7,16 @@ class Home(TemplateView):
     template_name = "hair/index.html"
 
 
-class Page(ListView):
-    model = Page
-    template_name = "hair/index.html"
-    context_object_name = "pages"
+class About(TemplateView):
+    template_name = "hair/about.html"
+
+
+class Services(TemplateView):
+    template_name = "hair/services.html"
+
+
+class Contact(TemplateView):
+    template_name = "hair/contact.html"
 
 
 class Gallery(ListView):
@@ -24,3 +29,9 @@ class Gallery(ListView):
         context = super().get_context_data(**kwargs)
         context["title"], context["space"] = "Gallery", " "
         return context
+
+
+class Page(ListView):
+    model = Page
+    template_name = "hair/index.html"
+    context_object_name = "pages"
