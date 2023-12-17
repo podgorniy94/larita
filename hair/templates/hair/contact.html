@@ -1,49 +1,42 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}
-  About :: {{
-  block.super }}
-{% endblock %}
+{% block title %}Contact :: {{ block.super }}{% endblock %}
 {% block content %}
   <div class="page">
     <div class="container">
-      <p>
-        Omnis iste natus error sit voluptatem doloremque laudantium totam rem
-        aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto
-        Omnis iste natus error sit voluptatem doloremque laudantium totam rem
-        aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto
-        iste natus error sit voluptatem doloremque laudantium totam rem aperiam
-        eaque ipsa quae ab illo inventore veritatis et quasi architecto
-      </p>
+      <p>Rezervujte si termín a my Vám zavoláme zpět</p>
       <div class="row">
         <div class="col-md-5">
           <form action="#" class="contact-form">
-            <input type="text" id="name" placeholder="Name..." />
+            <input type="text" id="name" placeholder="Jméno..." />
             <input type="text" id="email" placeholder="Email..." />
-            <input type="text" id="website" placeholder="Website..." />
-            <textarea name="" id="message" placeholder="Message..."></textarea>
+            <textarea name="" id="message" placeholder="Zprava..."></textarea>
             <div class="text-right">
-              <button class="button large" type="submit">Send Message</button>
+              <button class="button large" type="submit">Rezervovat</button>
             </div>
           </form>
         </div>
         <div class="col-md-6 col-md-offset-1">
           <div class="map-container">
-            <div class="map"></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.8693566828115!2d14.458848812253581!3d50.088732813223366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b935f9ce8df61%3A0x9ee5902290304e4!2zxIxlcm7DrW5vdmEgMTE2LzMsIDEzMCAwMCBQcmFoYSAzLcW9acW-a292!5e0!3m2!1sen!2scz!4v1698759214263!5m2!1sen!2scz"
+                    width="600"
+                    height="350"
+                    frameborder="0"
+                    style="border: 0;
+                           width: 100%"
+                    allowfullscreen></iframe>
             <div class="address-info">
               <address>
                 <img src={% static "images/icon-map-small.png" %} class="icon" />
-                <p>
-                  <strong>Company name</strong> 563 Avenue Street, New York
-                </p>
+                <p>Černinova 116/3, Žižkov, Praha</p>
               </address>
               <div class="contact-info">
-                <a href="mailto:contact@companyname.com" class="mail">
+                <a href="mailto:rita.bolocan26@gmail.com" class="mail">
                   <img src={% static "images/icon-envelope-small.png" %} class="icon" />
-                contact@companyname.com</a>
-                <a href="tel:(500)942042259" class="phone">
+                rita.bolocan26@gmail.com</a>
+                <a href="tel:+420 773 948 875" class="phone">
                   <img src={% static "images/icon-phone-small.png" %} class="icon" />
-                (500)942042259</a>
+                +420 773 948 875</a>
               </div>
             </div>
           </div>

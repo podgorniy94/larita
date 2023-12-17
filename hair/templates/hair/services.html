@@ -2,153 +2,116 @@
 {% load static %}
 {% block title %}Services :: {{ block.super }}{% endblock %}
 {% block content %}
-  <div class="page">
-    <div class="container">
-      <p>
-        Fusce nec congue diam. Maecenas condimentum porttitor nibh in dignissim.
-        Maecenas dictum felis id suscipit facilisis. Quisque et ipsum eleifend,
-        commodo tellus at, ultrices purus. Suspendisse bibendum diam et tortor
-        sodales sagittis. Phasellus rutrum justo libero, in gravida sem laoreet
-        in. Aenean sed elit nec felis elementum scelerisque sit amet nec leo.
-        Curabitur ipsum justo, laoreet quis feugiat at, blandit vel mauris.
-        Vivamus luctus placerat nibh quis tempus. Nunc molestie, mi et suscipit
-        vulputate, sem est rhoncus arcu, a vestibulum nunc magna ac tortor. Sed
-        malesuada quis sem in tincidunt. Sed cursus enim orci, vitae vulputate est
-        condimentum pharetra. Curabitur pretium est quis venenatis pharetra.
-        Vestibulum a leo at quam rutrum vestibulum. Aenean tincidunt tellus quis
-        tortor feugiat, rutrum sollicitudin .
-      </p>
-      <div class="row">
-        <div class="col-md-3">
-          <div class="feature">
-            <img src={% static "images/icon-1.png" %} class="feature-image" />
-            <h3 class="feature-title">Voluptatem</h3>
+    <div class="page">
+        <div class="container">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
-              dolor
+                Rita Bolocan s mnohaletými zkušenostmi v oboru se specializuje na moderní střihy, barvení vlasů a úpravy účesů podle aktuálních trendů. Její odbornost a pozornost k detailům zaručují, že každý zákazník opustí salon s dokonalým a unikátním vzhledem. Její schopnost porozumět individuálním potřebám klientů a navrhovat účesy, které zdůrazní jejich osobnost a styl, činí z ní vynikající stylistku pro každého, kdo hledá perfektní úpravu vlasů.
             </p>
-          </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="feature">
+                        <img src={% static "images/icon-1.png" %} class="feature-image" />
+                        <h3 class="feature-title">Vlasový botox</h3>
+                        <p>Hydratuje a obnovuje suché a poškozené vlasy, zanechává je měkké a lesklé.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature">
+                        <img src={% static "images/icon-2.png" %} class="feature-image" />
+                        <h3 class="feature-title">Dámské stříhání</h3>
+                        <p>Zkracování, vrstvení, čištění konečků, a tvoření různých účesů a stylů.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature">
+                        <img src={% static "images/icon-3.png" %} class="feature-image" />
+                        <h3 class="feature-title">Pánské stříhání</h3>
+                        <p>Stříhání, tvarování, úpravu vousů a aplikaci vlasových produktů podle klientových přání a potřeb.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature">
+                        <img src={% static "images/icon-4.png" %} class="feature-image" />
+                        <h3 class="feature-title">Večerní účesy</h3>
+                        <p>Složitý styling vlasů a zdobení, aby zdůraznil krásu, eleganci a vytvořily dojem vkusu a stylu.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="feature">
+                        <img src={% static "images/icon-5.png" %} class="feature-image" />
+                        <h3 class="feature-title">Péče o vlasy</h3>
+                        <p>
+                            Aplikace kondicionérů a mask pro zlepšení stavu vlasů./p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="feature">
+                            <img src={% static "images/icon-6.png" %} class="feature-image" />
+                            <h3 class="feature-title">Barvení</h3>
+                            <p>Balayage, ombre, pastelové barvy, stříbrné vlasy, a kombinaci různých odstínů pro zajímavý vzhled.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="feature">
+                            <img src={% static "images/icon-7.png" %} class="feature-image" />
+                            <h3 class="feature-title">Melir</h3>
+                            <p>Aplikaci jemných světlých pramenů a odstínů, který se podobá slunečním přirozenému zesvětlení vlasů.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="feature">
+                            <img src={% static "images/icon-8.png" %} class="feature-image" />
+                            <h3 class="feature-title">Holení</h3>
+                            <p>Tradiční barberské holení pomocí holicího strojku nebo holicí břitvy</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- .row -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="price-list">
+                            <h2 class="section-title">Stříhání</h2>
+                            <ul class="prices">
+                                <li>
+                                    Barva s foukáním<span class="price">1400-3000</span>
+                                </li>
+                                <li>
+                                    Barva-tonování-stříhání-foukání<span class="price">1700-3500</span>
+                                </li>
+                                <li>
+                                    Slavnostní svatební účes (v salonu)<span class="price">1500-2000</span>
+                                </li>
+                                <li>
+                                    Dámské stříhání, mytí-foukání<span class="price">700-1100</span>
+                                </li>
+                                <li>
+                                    Barvení obočí a řas (úprava obočí)<span class="price">500</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="price-list">
+                            <h2 class="section-title">Barvení / Melír</h2>
+                            <ul class="prices">
+                                <li>
+                                    AirTouch stříhání, mytí, foukání<span class="price">3000-5000</span>
+                                </li>
+                                <li>
+                                    Balayage mytí stříhání foukání<span class="price">3000-5000</span>
+                                </li>
+                                <li>
+                                    Melír-myčka-stříhání-foukání<span class="price">1800-4000</span>
+                                </li>
+                                <li>
+                                    Melír-tonování-stříhání-foukání<span class="price">2000-4500</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-3">
-          <div class="feature">
-            <img src={% static "images/icon-2.png" %} class="feature-image" />
-            <h3 class="feature-title">COnsequatur</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse,
-              minus, totam. Officia
-            </p>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="feature">
-            <img src={% static "images/icon-3.png" %} class="feature-image" />
-            <h3 class="feature-title">Temporibus</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste,
-              omnis cum,
-            </p>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="feature">
-            <img src={% static "images/icon-4.png" %} class="feature-image" />
-            <h3 class="feature-title">Perferendis</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
-              facere numquam porro
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-3">
-          <div class="feature">
-            <img src={% static "images/icon-5.png" %} class="feature-image" />
-            <h3 class="feature-title">Voluptatem</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
-              dolor perferendis
-            </p>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="feature">
-            <img src={% static "images/icon-6.png" %} class="feature-image" />
-            <h3 class="feature-title">COnsequatur</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse,
-              minus, totam. Officia ea
-            </p>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="feature">
-            <img src={% static "images/icon-7.png" %} class="feature-image" />
-            <h3 class="feature-title">Temporibus</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste,
-              omnis cum, quo dolorem
-            </p>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="feature">
-            <img src={% static "images/icon-8.png" %} class="feature-image" />
-            <h3 class="feature-title">Perferendis</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam,
-              facere numquam porro
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- .row -->
-      <div class="row">
-        <div class="col-md-6">
-          <div class="price-list">
-            <h2 class="section-title">Men's prices</h2>
-            <ul class="prices">
-              <li>
-                Maecenas dictum felis id suscipit facilisis<span class="price">$50</span>
-              </li>
-              <li>
-                Maecenas dictum felis id suscipit facilisis<span class="price">$50</span>
-              </li>
-              <li>
-                Maecenas dictum felis id suscipit facilisis<span class="price">$50</span>
-              </li>
-              <li>
-                Maecenas dictum felis id suscipit facilisis<span class="price">$50</span>
-              </li>
-              <li>
-                Maecenas dictum felis id suscipit facilisis<span class="price">$50</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="price-list">
-            <h2 class="section-title">women's prices</h2>
-            <ul class="prices">
-              <li>
-                Maecenas dictum felis id suscipit facilisis<span class="price">$50</span>
-              </li>
-              <li>
-                Maecenas dictum felis id suscipit facilisis<span class="price">$50</span>
-              </li>
-              <li>
-                Maecenas dictum felis id suscipit facilisis<span class="price">$50</span>
-              </li>
-              <li>
-                Maecenas dictum felis id suscipit facilisis<span class="price">$50</span>
-              </li>
-              <li>
-                Maecenas dictum felis id suscipit facilisis<span class="price">$50</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-{% endblock %}
+    {% endblock %}
