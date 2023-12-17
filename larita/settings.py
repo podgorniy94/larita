@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-!rqg9bs^odml#2cjsh*r5#pcd6q0g9ywb+)%%_)c=(70^8l-$i"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["larita-bolocan.cz"]
 
 
 # Application definition
@@ -76,11 +76,14 @@ WSGI_APPLICATION = "larita.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "HOST": "postgres.c82168.h2",
+        "PORT": "5432",
+        "NAME": "c82168_larita_bolocan_cz",
+        "USER": "c82168_larita_bolocan_cz",
+        "PASSWORD": "FeXmeNonhequj58",
+    },
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -104,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "cs-CS"
 
 TIME_ZONE = "UTC"
 
@@ -115,12 +118,15 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
+STATIC_URL = "/static/"
+STATIC_ROOT = "hair/static"
 
-STATIC_URL = "static/"
-
-
-MEDIA_ROOT = BASE_DIR / "media"
+MEDIA_ROOT = "hair/media"
 MEDIA_URL = "/media/"
+
+# STATIC_URL = "static/"
+# MEDIA_ROOT = BASE_DIR / "media"
+# MEDIA_URL = "/media/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
