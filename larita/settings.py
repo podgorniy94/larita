@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-!rqg9bs^odml#2cjsh*r5#pcd6q0g9ywb+)%%_)c=(70^8l-$i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["larita-bolocan.cz"]
+ALLOWED_HOSTS = ["larita-bolocan.cz", "127.0.0.1"]
 
 
 # Application definition
@@ -74,17 +74,13 @@ WSGI_APPLICATION = "larita.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "HOST": "postgres.c82168.h2",
-        "PORT": "5432",
-        "NAME": "c82168_larita_bolocan_cz",
-        "USER": "c82168_larita_bolocan_cz",
-        "PASSWORD": "FeXmeNonhequj58",
-    },
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+    }
 }
-
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
